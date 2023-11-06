@@ -45,7 +45,7 @@ const NavLink = (props: Props) => {
   );
 };
 
-export default function Simple() {
+export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -83,15 +83,15 @@ export default function Simple() {
                 <Avatar
                   size={"sm"}
                   src={
-                    "https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9"
+                    "https://unsplash.com/photos/a-black-and-white-photo-of-a-person-holding-a-camera-lQ0o9ZfXbLA"
                   }
                 />
               </MenuButton>
               <MenuList>
-                <MenuItem>Link 1</MenuItem>
-                <MenuItem>Link 2</MenuItem>
+                <MenuItem>Profile</MenuItem>
+                <MenuItem>About</MenuItem>
                 <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
+                <MenuItem>Log Out</MenuItem>
               </MenuList>
             </Menu>
           </Flex>
@@ -108,7 +108,7 @@ export default function Simple() {
         ) : null}
       </Box>
 
-      <Box p={4}>Main Content Here</Box>
+      <Box p={4}>Hello There!</Box>
     </>
   );
 }
